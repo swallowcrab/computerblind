@@ -1,0 +1,35 @@
+#k=4일 때의 경로
+def human_traffic(a,b,c,d):
+    goal=1
+    cnt=a-1
+    while True:
+        
+        if (cnt%4)+1==b:
+            goal=3
+            cnt+=1
+        else:
+            cnt+=1
+        
+        if not goal==3:
+            continue
+            
+        break
+        
+    return cnt
+            
+def human_traffic2(a,b,c,d):
+    goal=4
+    cnt=c-1
+    while True:
+        if (cnt%4)+1==d:
+            goal=3
+            cnt+=1
+        else:
+            cnt+=1
+        
+        if not goal==3:
+            continue
+            
+        break
+        
+    return cnt
